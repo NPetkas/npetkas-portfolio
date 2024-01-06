@@ -11,75 +11,120 @@
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
         <h1>.Petkas Portfolio.</h1>
 
-    <nav>
-        <a href="#who">.Who</a>
-        <a href="#about-me">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#contact">Contact.</a>
-    </nav> 
+    <!-- Navbar -->
+       <nav>
+         <a href="#who">.Who</a>
+         <a href="#about-me">About Me</a>
+         <a href="#experience">Experience</a>
+         <a href="#contact">Contact.</a>
+       </nav> 
     </header>
     
-    <main>
-        <article classs="introduction" id="who">
-            <div class="personal-intro">
-                <img src="./assets/images/portrait.jpg" alt="professional profile picture"/>
-                <h2>Nico Petkas.</h2>
-            <div class="start">
-                <h4>.Frontend Developer.</h4>
-            </div>
-                <p>-INTRODUCTION-</p>
-            </div>
-        </article>
+    <!-- Body -->
+ <main>
 
-        <article classs="about-me" id="about-me">
-            <me class="me"> 
+    <!-- Introduction article and hero image1-->
+    <section id="who">
+          <div class="personal-intro">
+                  <h2>Nico Petkas.</h2>
+              <div class="start">
+                    <h4>.Full-Stack Web Developer.</h4>
+              </div>
+                 <p>Junior developer attending UCLA coding bootcamp, with experience in HTML, CSS, and JavaScript.
+                    Works collaboratively and independently with strong communication skills while 
+                    maintaining the highest level of interpersonal professionalism.</p>                                         
+          </div>
+
+             <!-- Hero image1 -->
+             <div class="image1">
+                  <img src="./assets/images/portrait.jpg" alt="professional profile picture"/>
+             </div>
+    </section>
+
+    <!-- About article and hero image2-->
+    <section class="about-me" id="about-me">
+            <me class="me">
                 <h2 class="heading">.About <span>Me</span></h2>
-                <p>-ABOUT ME-</p>
+
+             <!-- Hero image2 -->
+            <div class="image2">
+                <img src="./assets/images/portrait_2.jpg" alt="professional profile picture"/>
+            </div>
+                <p>Well rounded professional with high-level expereince in the entertainment industry, ranging from audio 
+                    engineering to technical coordination of audio/video deliverable aggregation for various top tier 
+                    streaming providers. Expertise in taking client requirements to create procedures that are valuable, 
+                    innovative and successful. Managed digital supply chain initiatives for client based projects which
+                    inclueded cloud-based inventory management and content delivery. Qualified to lead and manage a project 
+                    to its entirety.</p>
             </me>
-        </article>
-        
-        <section class="skill" id="experience">
+    </section>
+      
+    <!-- Experience/skill Section w/ images-->
+    <section class="skill" id="experience">
             <h2>Experience.</h2>
 
+        <!-- Experience boxes w/ link icons w/ images-->
         <container class="skill-container">
             <card class="skill-ex">
-                <h3>Node/IoT</h3>
-                <p>example1</p>
-            </card>
+               <img src="./assets/images/screenshot_horiseon-accessibility.png">
+                <div class="skill-info">
+                    <h3>HTML/CSS</h3>
+                  <p><a href="https://nicoinlalaland.github.io/horiseon-accessibility/"><i class='bx bxl-github bx-spin-hover'></i></a></p>
+                </div> 
+              </card>
 
             <card class="skill-ex">
-                <h3>HTML/CSS</h3>
-                <p>example2</p>
-            </card>
+                <img src="./assets/images/navmap.png">
+                <div class="skill-info">
+                    <h3>JavaScript</h3>
+                  <p><i class='bx bxs-map bx-spin-hover'></i></p>
+                </div> 
+              </card>
         
-            <card class="skill-ex">
-                <h3>JavaScript</h3>
-                <p>example3</p>
-            </card>
+              <card class="skill-ex">
+                <img src="./assets/images/no-one-cares-studio.com_.png">
+                <div class="skill-info">
+                    <h3>Web Design</h3>
+                  <p><a href="https://no-one-cares-studio.com/"><i class='bx bxs-smile bx-spin-hover'></i></a></p>
+                </div> 
+              </card>
 
-            <card class="skill-ex">
-                <h3>Web Design</h3>
-                <p>example4</p>
-            </card>
+              <card class="skill-ex">
+                <img src="./assets/images/no_one_nico.jpg">
+                <div class="skill-info">
+                    <h3>Projects</h3>
+                  <p><i class='bx bxs-cloud bx-spin-hover'></i></p>
+                </div> 
+              </card>
 
-            <card class="skill-ex">
-                <h3>Projects</h3>
-                <p>example5</p>
-            </card>
+              <card class="skill-ex">
+                <img src="./assets/images/resumeshot.png">
+                <div class="skill-info">
+                  <h3>Work</h3>
+                  <p><a href="https://www.linkedin.com/in/nico-petkas-464769286" alt="linkedin profile"> <i class='bx bxl-linkedin-square bx-spin-hover'></i></a></p>
+                </div> 
+              </card>
         </container>
-        </section> 
+    </section> 
 
-        <article>
-            <h5 id="contact">.Contact</h5>
+    <!-- Contact Section w/ options and message form-->
+    <section id="contact">
+            <h5>.Contact</h5>
 
+    <!-- Contact options with icons-->
             <logos class="adjust">
-            <i class='bx bxl-linkedin-square'></i>
-            <i class='bx bxl-slack'></i>
+                <a href="https://github.com/NicoInLALAland" alt="Github profile"> <i class='bx bxl-github bx-burst-hover'></i></a>
+                <a href="https://m.facebook.com/nico.petkas" alt="Facebook profile"> <i class='bx bxl-facebook-square bx-burst-hover'></i></a>
+                <a href=mailto:nicopetkas@gmail.com alt="Contact via email"> <i class='bx bxs-envelope bx-burst-hover'></i></a>
+                <a href="tel:6023634518" alt="Contact by phone"> <i class='bx bxs-phone bx-burst-hover'></i></a>
             </logos>
 
+            <!-- Contact form-->
             <form action="/action_page.php">
                 <label for="fname">First & Last Name</label>
                 <input type="text" id="flname" name="firstname" placeholder="Your name..">
@@ -87,14 +132,15 @@
                 <label for="mail">Email</label>
                 <input type="text" id="mail" name="email" placeholder="Email address..">
             
-                <label for="subject">Subject</label>
-                <textarea id="subject" name="subject" placeholder="Message.." style="height:200px"></textarea>
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="....." style="height:200px"></textarea>
             
                 <input type="submit" value="Submit">
-              </form>
-        </article>
-    </main>
+            </form>
+    </section>
+</main>
 
+    <!-- Footer -->
     <footer>
         <aside>.No One Cares Studios, inc.</aside>
     </footer>

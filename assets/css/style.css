@@ -18,7 +18,7 @@
 /* Element Selectors */
 
 
-/* shows the same text size in all browsers and smooth scolling for the entire html body */
+/* shows the same text size in all browsers and smooth scrolling for the entire html body */
 html {
 	font-size: 62.5%;
     scroll-behavior: smooth;
@@ -73,7 +73,7 @@ nav a:hover {
 
 h2, h5 {
     font-size: 4rem;
-    padding-bottom: 15px;
+    padding-bottom: 13px;
 }
 h5, .adjust {
     margin-left: 13rem;
@@ -139,7 +139,7 @@ input[type=submit]:hover {
     transition: .2s;
 }
 
-/* fized postion footer styling with side note orientation*/
+/* fixed position footer styling with side note orientation*/
 footer {
     position: fixed; 
     bottom: 0px;
@@ -157,9 +157,10 @@ aside {
 
 
 
-/* introduction article font styling and page orientaion */
+/* introduction article font styling and page orientation */
 .personal-intro {
     max-width: 50rem;
+    flex-wrap: wrap;
 }
 
 .personal-intro h2 {
@@ -181,7 +182,8 @@ aside {
     font-weight: 300;
 }
 .image1 {
-    padding-right: 25px;
+    padding-right: 30px;
+    padding-left: 15px;
 }
 
     /* image1 size styling and display*/
@@ -201,11 +203,13 @@ aside {
 
 
 /* second section and image styling */
+
 .me p {
-    padding-top: 7rem;
+    padding-top: 3.75rem;
 }
     /* image2 orientation */
 .image2 {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,7 +221,6 @@ aside {
     border: 3px solid var(--mustard);
     box-shadow: 5px 5px 10px black;
     border-radius: 100px;
-    opacity: 0.75;
     transition: .7s ease; 
 }
     /* image2 scale up animation */
@@ -226,7 +229,7 @@ aside {
 }
 
 
-/* exerpience section display and image styling */
+/* experience section display and image styling */
 .skill {
     padding-top: 1px;
     margin-bottom: 5rem;
@@ -319,29 +322,32 @@ aside {
 
 /* Media query */
 
-/* using a desktop-first approach, use `max-width` values going from wide -> narrow for a responsive design */
-@media screen and (max-width: 992px) {
+/* using a desktop-first approach, `max-width` values going from wide to narrow */
+@media screen and (max-width: 1366px) {
 	/* on tablets, set cards to be 50% of the width */
 	nav a, section {
-		flex-basis: 50%;
-	}
+		flex-basis: 75%;
+    }
+        .image1 img {
+            flex-shrink: 1 200%;
+        }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
 	/* on mobile devices, set cards to be 100% of the width */
     nav a, section {
 		flex-basis: 100%;
-		/* margin-bottom: 1.5rem; */
 	}
-    .skill-container {
-        flex-grow: 1 50%;
+
+    .skill-container, .skill-ex {
+        flex-grow: 2 150%;
     }
     
 }
 
- /* sets the the full height of the viewport for each section with orientation */
- section {
-    min-height: 100vh;
-    padding: 10rem 2% 2rem;
+    /* sets the the full height of the viewport for each section with orientation */
+    section {
+        min-height: 100vh;
+        padding: 8rem 2% 2rem;
 }
 

@@ -2,12 +2,8 @@
 
 ## Description 
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+This project was created in order to present a nice, well layed out portfolio that is easily navigatable, readable, and clean. This project demonstrates my knowledge, experience, and design quality I can bring to a project or potential employer. It also hepled me understand the mass amount of design possiblities using CSS, while the importance of having a well structured html to back it up with is fundimental. Through is build, I learned the importance of not having redundant coding in order to eliminate any design flaws or issues down the road. 
 
--what was your motivation?
--why did you build this project? (Note: the answer is not "Because it was homework assignment.")
--what problem does it solve?
--what did you learn?
 
 ![image](./assets/images/Screenshot.png)
 

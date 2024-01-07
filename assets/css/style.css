@@ -24,11 +24,10 @@ html {
     scroll-behavior: smooth;
 }
 
-
 /* General font style and background color with a flex attribute for the body section */
 body {
     font-family: Helvetica, Arial, sans-serif;
-	color:#e8ded0;
+	color: var(--tan);
     background-color:rgb(51, 74, 107);
     display: flex;
     flex-wrap: wrap;
@@ -75,9 +74,11 @@ h2, h5 {
     font-size: 4rem;
     padding-bottom: 13px;
 }
+
 h5, .adjust {
     margin-left: 13rem;
 }
+
 h3 {
     font-size: x-large;
 }
@@ -266,7 +267,7 @@ aside {
     height: 300px;
     opacity: 0.7;
 }
-    /* experience tab gradient styling, display, and animation */
+    /* experience tab gradient styling, display, and effect */
 .skill-ex .skill-info {
      position: absolute;
      bottom: 1;
@@ -322,9 +323,8 @@ aside {
 
 /* Media query */
 
-/* using a desktop-first approach, `max-width` values going from wide to narrow */
+	/* on tablets, sets cards to be 75% of the width */
 @media screen and (max-width: 1366px) {
-	/* on tablets, set cards to be 50% of the width */
 	nav a, section {
 		flex-basis: 75%;
     }
@@ -332,20 +332,18 @@ aside {
             flex-shrink: 1 200%;
         }
 }
-
-@media screen and (max-width: 992px) {
-	/* on mobile devices, set cards to be 100% of the width */
+	/* on mobile devices, sets cards to be 100% of the width */
+@media screen and (max-width: 720px) {
     nav a, section {
 		flex-basis: 100%;
 	}
 
     .skill-container, .skill-ex {
-        flex-grow: 2 150%;
+        flex-grow: 1 2 150%;
     }
-    
 }
 
-    /* sets the the full height of the viewport for each section with orientation */
+    /* sets the full height of the viewport for each section with orientation */
     section {
         min-height: 100vh;
         padding: 8rem 2% 2rem;
